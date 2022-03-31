@@ -5,13 +5,13 @@ class MedicalHistory extends Model { }
 
 
 MedicalHistory.init({
-    patient_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'patients',
-            key: 'id'
-        }
-    },
+    // patient_id: {
+    //     type: DataTypes.INTEGER,
+    //     references: {
+    //         model: 'patients',
+    //         key: 'id'
+    //     }
+    // },
     year: {
         type: DataTypes.DATE,
         allowNull: false

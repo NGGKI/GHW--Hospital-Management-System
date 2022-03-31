@@ -7,20 +7,20 @@ class Diagnose extends Model { }
 
 
 Diagnose.init({
-    employee_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'employees',
-            key: 'id'
-        }
-    },
-    patient_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'patients',
-            key: 'id'
-        }
-    },
+    // employee_id: {
+    //     type: DataTypes.INTEGER,
+    //     references: {
+    //         model: 'employees',
+    //         key: 'id'
+    //     }
+    // },
+    // patient_id: {
+    //     type: DataTypes.INTEGER,
+    //     references: {
+    //         model: 'patients',
+    //         key: 'id'
+    //     }
+    // },
     diagnosis: {
         type: DataTypes.STRING,
         allowNull: false
@@ -37,7 +37,6 @@ Diagnose.init({
         type: DataTypes.STRING,
         allowNull: false
     },
-    
 },
     {
     sequelize,
